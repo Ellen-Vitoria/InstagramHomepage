@@ -1,0 +1,27 @@
+/*Resetando alguns estilos para evitar problemas*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*Tirando o underline das âncoras*/
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex; /*Elemento HTML torna-se "flex container", ou seja, todos itens em linha, ocupando o espaço que necessitam no container (toda a linha ou o maior espaço dela)*/
+    align-items: center; /*Alinhamento vertical - eixo Y*/
+    justify-content: start; /*Eixo X - "start": começar da esquerda para direita*/
+    width: 60%;
+    height: 100vh;
+}
