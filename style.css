@@ -129,3 +129,33 @@ em uma determinada div (consirando várias divs com o mesmo nome da class)*/
 .app-download:nth-child(2) {
     background-image: url('./img/google-play.png');
 }
+
+/*Media Queries*/
+
+@media (max-width: 1024px) { /*Versão Tablet*/
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) { /*Versão Celular*/
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none; /*Tirando imagem do celular*/
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
