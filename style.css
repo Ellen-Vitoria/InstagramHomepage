@@ -26,13 +26,55 @@ body {
     height: 100vh;
 }
 
-.intagram-phone {
+.instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 58%;
 }
 
-.intagram-phone img {
+.instagram-phone img {
     height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-direction: column; /*O justify-content agora está na vertical e o align-items na horizontal*/
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+/*:nth-child(): seletor de css que captura os elementos que estão
+em uma determinada div (consirando várias divs com o mesmo nome da class)*/
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /*A imagem não exceder o tamanho da div // A "parte" do quadrado da imagem ficará escondido*/
+}
+
+.profile-photo img {
+    height: 6rem;
 }
